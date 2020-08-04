@@ -93,4 +93,17 @@
         android:textStyle="bold"
         android:visibility="invisible" />
 
+    <TextView
+        android:id="@+id/definate"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/result"
+        android:layout_margin="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edi_text_border"
+        android:gravity="center"
+        android:text=""
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
 </LinearLayout>

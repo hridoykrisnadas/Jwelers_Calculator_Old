@@ -11,7 +11,7 @@ import android.widget.ViewFlipper;
 
 public class MainActivity extends AppCompatActivity {
     ViewFlipper viewflipper;
-    Button TkButton;
+    Button tkButton;
 
 
     @Override
@@ -26,8 +26,8 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-        TkButton = findViewById(R.id.TkButtonId);
-        TkButton.setOnClickListener(new View.OnClickListener() {
+        tkButton = findViewById(R.id.TkButtonId);
+        tkButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, Tk_Activity.class);

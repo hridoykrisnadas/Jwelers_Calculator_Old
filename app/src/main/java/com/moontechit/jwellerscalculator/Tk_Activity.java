@@ -11,7 +11,7 @@ import android.widget.TextView;
 public class Tk_Activity extends AppCompatActivity {
     EditText price, vori, ana, rothi, point;
     Button calculation;
-    TextView result;
+    TextView result, definate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,38 +25,36 @@ public class Tk_Activity extends AppCompatActivity {
         point = findViewById(R.id.Point);
         calculation = findViewById(R.id.calculation);
         result = findViewById(R.id.result);
+        definate = findViewById(R.id.definate);
 
         calculation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                int Price = 0;
-                int Vori = 0;
-                int Ana = 0;
-                int Rothi = 0;
-                int Point = 0;
+                int inputPrice = 0;
+                int inputVori = 0;
+                int inputAna = 0;
+                int inputRothi = 0;
+                int inputPoint = 0;
 
-                Price = Integer.parseInt(price.getText().toString());
-                Vori = Integer.parseInt(vori.getText().toString());
-                Ana = Integer.parseInt(ana.getText().toString());
-                Rothi = Integer.parseInt(rothi.getText().toString());
-                Point = Integer.parseInt(point.getText().toString());
+                inputPrice = Integer.parseInt(price.getText().toString());
+                inputVori = Integer.parseInt(vori.getText().toString());
+                inputAna = Integer.parseInt(ana.getText().toString());
+                inputRothi = Integer.parseInt(rothi.getText().toString());
+                inputPoint = Integer.parseInt(point.getText().toString());
 
-             /*   v = price
-                a = price/16
-                r = a/6
-                p = r/10
 
-                result = (vori*v)+(a*ana)+(r*rothi)+(p*point)*/
-
-                float v = Price;
+                float v = inputPrice;
                 float a = v / 16;
                 float r = a / 6;
                 float p = r / 10;
 
-                float RESULT = (Vori * v) + (Ana * a) + (Rothi * r) + (Point * p);
+                float RESULT = (inputVori * v) + (inputAna * a) + (inputRothi * r) + (inputPoint * p);
                 result.setText("Answer is: " + RESULT);
+                result.animate();
                 result.setVisibility(View.VISIBLE);
+
+                definate.setText("1 Vori: " + v + "tk \n" + "1 Ana: " + a + "tk \n" + "1 Rothi: " + r + "tk \n" + "1 Point: " + p + "tk");
             }
         });
     }
