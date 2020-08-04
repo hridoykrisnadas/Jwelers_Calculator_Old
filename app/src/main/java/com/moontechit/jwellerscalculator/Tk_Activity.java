@@ -1,12 +1,12 @@
 package com.moontechit.jwellerscalculator;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Tk_Activity extends AppCompatActivity {
     EditText price, vori, ana, rothi, point;
@@ -27,6 +27,7 @@ public class Tk_Activity extends AppCompatActivity {
         result = findViewById(R.id.result);
         definate = findViewById(R.id.definate);
 
+
         calculation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -43,18 +44,28 @@ public class Tk_Activity extends AppCompatActivity {
                 inputRothi = Integer.parseInt(rothi.getText().toString());
                 inputPoint = Integer.parseInt(point.getText().toString());
 
+                if (inputPrice >= 0 && inputVori >= 0 && inputAna >= 0 && inputAna <= 16 && inputRothi >= 0 && inputRothi <= 6 && inputPoint >= 0 && inputPoint <= 10) {
 
-                float v = inputPrice;
-                float a = v / 16;
-                float r = a / 6;
-                float p = r / 10;
+                    float v = inputPrice;
+                    float a = v / 16;
+                    float r = a / 6;
+                    float p = r / 10;
 
-                float RESULT = (inputVori * v) + (inputAna * a) + (inputRothi * r) + (inputPoint * p);
-                result.setText("Answer is: " + RESULT);
-                result.animate();
-                result.setVisibility(View.VISIBLE);
+                    float RESULT = (inputVori * v) + (inputAna * a) + (inputRothi * r) + (inputPoint * p);
+                    result.setText("Answer is: " + RESULT);
+                    result.animate();
+                    result.setVisibility(View.VISIBLE);
 
-                definate.setText("1 Vori: " + v + "tk \n" + "1 Ana: " + a + "tk \n" + "1 Rothi: " + r + "tk \n" + "1 Point: " + p + "tk");
+                    definate.setText("১ ভরি: " + v + " টাকা \n" + "১ আনা: " + a + " টাকা \n" + "১ রথি: " + r + " টাকা \n" + "১ পয়েন্ট: " + p + " টাকা \n");
+                    definate.setVisibility(View.VISIBLE);
+
+                } else {
+                    result.setText(" Please Enter a valid value");
+                    result.animate();
+                    result.setVisibility(View.VISIBLE);
+                }
+
+
             }
         });
     }
