@@ -7,12 +7,22 @@
     android:background="#FFFFFF"
     android:orientation="vertical"
     android:padding="10dp"
+    android:layout_marginTop="30dp"
     tools:context="com.moontechit.jwellerscalculator.Tk_Activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="টাকার হিসাব করুন"
+        android:textColor="#3F51B5"
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="2dp">
+        android:layout_marginTop="10dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -30,53 +40,69 @@
                 android:inputType="number"
                 android:textStyle="bold" />
 
-            <EditText
-                android:id="@+id/Vori"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_below="@id/Price"
-                android:layout_margin="5dp"
-                android:background="@drawable/edi_text_border"
-                android:gravity="center"
-                android:hint="কতো ভরি তা লিখুন"
-                android:inputType="number"
-                android:textStyle="bold" />
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
 
-            <EditText
-                android:id="@+id/Ana"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_below="@id/Vori"
-                android:layout_margin="5dp"
-                android:background="@drawable/edi_text_border"
-                android:gravity="center"
-                android:hint="কতো আনা তা লিখুন"
-                android:inputType="number"
-                android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/Vori"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edi_text_border"
+                    android:gravity="center"
+                    android:hint="কতো ভরি তা লিখুন"
+                    android:inputType="number"
+                    android:textStyle="bold" />
 
-            <EditText
-                android:id="@+id/Rothi"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_below="@id/Ana"
-                android:layout_margin="5dp"
-                android:background="@drawable/edi_text_border"
-                android:gravity="center"
-                android:hint="কতো রথি তা লিখুন"
-                android:inputType="number"
-                android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/Ana"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edi_text_border"
+                    android:gravity="center"
+                    android:hint="কতো আনা তা লিখুন"
+                    android:inputType="number"
+                    android:textStyle="bold" />
 
-            <EditText
-                android:id="@+id/Point"
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_below="@id/Rothi"
-                android:layout_margin="5dp"
-                android:background="@drawable/edi_text_border"
-                android:gravity="center"
-                android:hint="কতো পয়েন্ট তা লিখুন"
-                android:inputType="number"
-                android:textStyle="bold" />
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/Rothi"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edi_text_border"
+                    android:gravity="center"
+                    android:hint="কতো রথি তা লিখুন"
+                    android:inputType="number"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/Point"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edi_text_border"
+                    android:gravity="center"
+                    android:hint="কতো পয়েন্ট তা লিখুন"
+                    android:inputType="number"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
 
 
             <Button
@@ -88,6 +114,7 @@
                 android:text="Calculation"
                 android:textColorHint="#3D5AFE"
                 android:textSize="15pt"
+                android:layout_marginTop="10dp"
                 android:textStyle="bold" />
 
             <TextView

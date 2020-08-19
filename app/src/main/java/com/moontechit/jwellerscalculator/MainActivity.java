@@ -11,7 +11,7 @@ import android.widget.ViewFlipper;
 
 public class MainActivity extends AppCompatActivity {
     ViewFlipper viewflipper;
-    Button tkButton;
+    Button tkButton, sumButton, sponsored;
 
 
     @Override
@@ -27,10 +27,29 @@ public class MainActivity extends AppCompatActivity {
 
 
         tkButton = findViewById(R.id.TkButtonId);
+        sumButton = findViewById(R.id.SumButtonId);
+        sponsored = findViewById(R.id.SponsoredButtonID);
+
         tkButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, Tk_Activity.class);
+                startActivity(intent);
+            }
+        });
+
+        sumButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Sum_Acitivity.class);
+                startActivity(intent);
+            }
+        });
+
+        sponsored.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Sponsored.class);
                 startActivity(intent);
             }
         });
