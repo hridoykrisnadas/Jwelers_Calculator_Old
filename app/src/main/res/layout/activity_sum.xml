@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFE"
+    android:background="#FFEB3B"
     android:orientation="vertical"
     android:padding="10dp"
     tools:context="com.moontechit.jwellerscalculator.Sum_Acitivity">
@@ -16,6 +16,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/edi_text_border"
             android:orientation="vertical">
 
             <TextView
@@ -23,6 +24,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:text="গহনার ওজন করুন"
+                android:background="@drawable/edi_text_border"
                 android:textColor="#3F51B5"
                 android:textSize="25sp"
                 android:textStyle="bold" />
@@ -82,7 +84,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/edi_text_border"
                     android:gravity="center"
-                    android:hint="ভরির ওজন"
+                    android:hint="রখির ওজন"
                     android:inputType="number"
                     android:textStyle="bold" />
 
@@ -94,7 +96,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/edi_text_border"
                     android:gravity="center"
-                    android:hint="আনার ওজন"
+                    android:hint="পয়েন্টের ওজন"
                     android:inputType="number"
                     android:textStyle="bold" />
 
@@ -155,7 +157,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/edi_text_border"
                     android:gravity="center"
-                    android:hint="ভরির ওজন"
+                    android:hint="রথির ওজন"
                     android:inputType="number"
                     android:textStyle="bold" />
 
@@ -167,7 +169,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/edi_text_border"
                     android:gravity="center"
-                    android:hint="আনার ওজন"
+                    android:hint="পয়েন্টের ওজন"
                     android:inputType="number"
                     android:textStyle="bold" />
 
@@ -175,11 +177,12 @@
 
 
             <Button
+                android:layout_margin="5dp"
                 android:id="@+id/SummationBtn"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginTop="5dp"
-                android:background="@color/colorPrimary"
+                android:background="@drawable/btn_border"
                 android:foregroundGravity="center"
                 android:text="Calculation"
                 android:textColorHint="#3D5AFE"

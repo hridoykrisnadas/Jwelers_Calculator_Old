@@ -4,30 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="#FFEB3B"
     android:orientation="vertical"
     android:padding="10dp"
-    android:layout_marginTop="30dp"
     tools:context="com.moontechit.jwellerscalculator.Tk_Activity">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:text="টাকার হিসাব করুন"
-        android:textColor="#3F51B5"
-        android:textSize="25sp"
-        android:textStyle="bold" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edi_text_border">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edi_text_border"
+                android:gravity="center_horizontal"
+                android:text="টাকার হিসাব করুন"
+                android:textColor="#3F51B5"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
 
             <EditText
                 android:id="@+id/Price"
@@ -44,6 +49,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:padding="3dp"
                 android:weightSum="2">
 
                 <EditText
@@ -76,6 +82,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:padding="3dp"
                 android:weightSum="2">
 
                 <EditText
@@ -106,10 +113,11 @@
 
 
             <Button
+                android:layout_margin="5dp"
                 android:id="@+id/calculation"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:background="@color/colorPrimary"
+                android:background="@drawable/btn_border"
                 android:foregroundGravity="center"
                 android:text="Calculation"
                 android:textColorHint="#3D5AFE"

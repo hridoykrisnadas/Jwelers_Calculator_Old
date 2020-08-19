@@ -3,6 +3,7 @@ package com.moontechit.jwellerscalculator;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -34,23 +35,16 @@ public class Sum_Acitivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                int inputVori1 = 0;
-                int inputAna1 = 0;
-                int inputRothi1 = 0;
-                int inputPoint1 = 0;
-                int inputVori2 = 0;
-                int inputAna2 = 0;
-                int inputRothi2 = 0;
-                int inputPoint2 = 0;
 
-                inputVori1 = Integer.parseInt(vori1.getText().toString());
-                inputAna1 = Integer.parseInt(ana1.getText().toString());
-                inputRothi1 = Integer.parseInt(rothi1.getText().toString());
-                inputPoint1 = Integer.parseInt(point1.getText().toString());
-                inputVori2 = Integer.parseInt(vori2.getText().toString());
-                inputAna2 = Integer.parseInt(ana2.getText().toString());
-                inputRothi2 = Integer.parseInt(rothi2.getText().toString());
-                inputPoint2 = Integer.parseInt(point2.getText().toString());
+                int inputVori1 = Integer.parseInt(vori1.getText().toString());
+                int inputAna1 = Integer.parseInt(ana1.getText().toString());
+                int inputRothi1 = Integer.parseInt(rothi1.getText().toString());
+                int inputPoint1 = Integer.parseInt(point1.getText().toString());
+                int inputVori2 = Integer.parseInt(vori2.getText().toString());
+                int inputAna2 = Integer.parseInt(ana2.getText().toString());
+                int inputRothi2 = Integer.parseInt(rothi2.getText().toString());
+                int inputPoint2 = Integer.parseInt(point2.getText().toString());
+
 
                 if (inputAna1 < 16 && inputAna1 >= 0 && inputAna2 < 16 & inputAna2 >= 0 && inputRothi1 >= 0 && inputRothi1 < 6 && inputRothi1 >= 0 && inputRothi2 >= 0 && inputRothi2 < 6 && inputPoint1 >= 0 && inputPoint1 < 10 && inputPoint2 >= 0 && inputPoint2 < 10) {
 
@@ -73,6 +67,7 @@ public class Sum_Acitivity extends AppCompatActivity {
                     }
 
                     sumResult.setText("ভরি: " + v + "\nআনা: " + a + "\nরথি: " + r + "\nপয়েন্ট: " + p);
+                    sumResult.setVisibility(View.VISIBLE);
 
 
                 } else {

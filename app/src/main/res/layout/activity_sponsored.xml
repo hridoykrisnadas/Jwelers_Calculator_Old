@@ -5,37 +5,139 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#FFEB3B"
+    android:padding="5dp"
     tools:context="com.moontechit.jwellerscalculator.Sponsored">
 
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:text="Sponsored By"
-        android:textColor="#3F51B5"
-        android:textSize="25sp"
-        android:textStyle="bold" />
+        android:layout_height="wrap_content">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="350dp"
-        android:layout_marginTop="5dp"
-        android:src="@drawable/bijoy" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
-        android:gravity="center_horizontal"
-        android:text="Developed By"
-        android:textColor="#3F51B5"
-        android:textSize="25sp"
-        android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edi_text_border"
+                android:orientation="vertical"
+                android:padding="10dp">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="350dp"
-        android:src="@drawable/hridoy" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Sponsored By"
+                    android:background="@drawable/edi_text_border"
+                    android:textColor="#3F51B5"
+                    android:padding="5dp"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
 
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/bijoy" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="বিজয় কৃষ্ণ দাস"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="পরিচালক, বিজয় ছিলা ঘর \nস্বর্ণপট্টি, কুমারখালী, কুষ্টিয়া"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/BijoyContact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/btn_border"
+                    android:padding="10dp"
+                    android:text="Contact Now"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edi_text_border"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edi_text_border"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text="Developed By"
+                    android:textColor="#3F51B5"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/hridoy" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="হৃদয় কৃষ্ণ দাস"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="প্রোগ্রামার ও ডিজিটাল মার্কেটিং এক্সপার্ট"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/HridoyContact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/btn_border"
+                    android:padding="10dp"
+                    android:text="Contact Now"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
