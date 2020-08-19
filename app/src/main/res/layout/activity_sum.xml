@@ -9,45 +9,200 @@
     android:padding="10dp"
     tools:context="com.moontechit.jwellerscalculator.Sum_Acitivity">
 
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:text="গহনার ওজন করুন"
-        android:textColor="#000000"
-        android:textSize="25sp"
-        android:textStyle="bold" />
+        android:layout_height="wrap_content">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:weightSum="2">
-
-        <EditText
-            android:id="@+id/Vori1"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_margin="5dp"
-            android:layout_weight="1"
-            android:background="@drawable/edi_text_border"
-            android:gravity="center"
-            android:hint="১ম গহনfর ভরি"
-            android:inputType="number"
-            android:textStyle="bold" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/Vori2"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_margin="5dp"
-            android:layout_weight="1"
-            android:background="@drawable/edi_text_border"
-            android:gravity="center"
-            android:hint="২য় গহনfর ভরি"
-            android:inputType="number"
-            android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="গহনার ওজন করুন"
+                android:textColor="#3F51B5"
+                android:textSize="25sp"
+                android:textStyle="bold" />
 
-    </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="১ম গহনার ওজন লিখুন"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/Vori1"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edi_text_border"
+                    android:gravity="center"
+                    android:hint="ভরির ওজন"
+                    android:inputType="number"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/Ana1"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edi_text_border"
+                    android:gravity="center"
+                    android:hint="আনার ওজন"
+                    android:inputType="number"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/Rothi1"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edi_text_border"
+                    android:gravity="center"
+                    android:hint="ভরির ওজন"
+                    android:inputType="number"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/Point1"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edi_text_border"
+                    android:gravity="center"
+                    android:hint="আনার ওজন"
+                    android:inputType="number"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="২য় গহনার ওজন লিখুন"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/Vori2"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edi_text_border"
+                    android:gravity="center"
+                    android:hint="ভরির ওজন"
+                    android:inputType="number"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/Ana2"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edi_text_border"
+                    android:gravity="center"
+                    android:hint="আনার ওজন"
+                    android:inputType="number"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/Rothi2"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edi_text_border"
+                    android:gravity="center"
+                    android:hint="ভরির ওজন"
+                    android:inputType="number"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/Point2"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edi_text_border"
+                    android:gravity="center"
+                    android:hint="আনার ওজন"
+                    android:inputType="number"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/SummationBtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimary"
+                android:foregroundGravity="center"
+                android:text="Calculation"
+                android:textColorHint="#3D5AFE"
+                android:textSize="15pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/SummationResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/SummationBtn"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edi_text_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="#f000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
