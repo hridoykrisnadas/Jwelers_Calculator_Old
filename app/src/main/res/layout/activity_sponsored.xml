@@ -20,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="350dp"
         android:layout_marginTop="5dp"
-        android:src="@drawable/Bijoy" />
+        android:src="@drawable/bijoy" />
 
     <TextView
         android:layout_width="match_parent"
@@ -36,6 +36,6 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="350dp"
-        android:src="@drawable/Hridoy" />
+        android:src="@drawable/hridoy" />
 
 </LinearLayout>
