@@ -44,7 +44,7 @@ public class Tk_Activity extends AppCompatActivity {
                 inputRothi = Integer.parseInt(rothi.getText().toString());
                 inputPoint = Integer.parseInt(point.getText().toString());
 
-                if (inputPrice >= 0 && inputVori >= 0 && inputAna >= 0 && inputAna <= 16 && inputRothi >= 0 && inputRothi <= 6 && inputPoint >= 0 && inputPoint <= 10) {
+                if (inputPrice >= 0 && inputVori >= 0 && inputAna >= 0 && inputAna < 16 && inputRothi >= 0 && inputRothi < 6 && inputPoint >= 0 && inputPoint < 10) {
 
                     float v = inputPrice;
                     float a = v / 16;

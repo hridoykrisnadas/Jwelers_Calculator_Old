@@ -16,15 +16,18 @@
         android:layout_centerHorizontal="true"
         android:background="#DABC5B"></ViewFlipper>
 
-    <RelativeLayout
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:weightSum="3"
         android:layout_below="@id/viewFlipper"
         android:layout_centerHorizontal="true"
         android:layout_margin="5dp"
         android:background="#f000">
 
         <Button
+            android:layout_weight="1"
             android:id="@+id/TkButtonId"
             android:layout_width="match_parent"
             android:layout_height="150dp"
@@ -35,7 +38,32 @@
             android:textSize="15pt"
             android:textStyle="bold" />
 
-    </RelativeLayout>
+        <Button
+            android:id="@+id/SumButtonId"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:background="#F44336"
+            android:foregroundGravity="center"
+            android:text="গহনার ওজন যোগ করুন"
+            android:textColorHint="#3D5AFE"
+            android:textSize="15pt"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/SponsoredButtonID"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:background="#FFEB3B"
+            android:foregroundGravity="center"
+            android:text="Sponsored By"
+            android:textAllCaps="false"
+            android:textColorHint="#3D5AFE"
+            android:textSize="15pt"
+            android:textStyle="bold" />
+
+    </LinearLayout>
 
 
 </RelativeLayout>

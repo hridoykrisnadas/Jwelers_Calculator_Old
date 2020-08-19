@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         viewflipper.setFlipInterval(3000);
         viewflipper.setAutoStart(true);
 
-        viewflipper.setOutAnimation(this, android.R.anim.slide_in_left);
-        viewflipper.setInAnimation(this, android.R.anim.slide_out_right);
+        viewflipper.setInAnimation(this, android.R.anim.fade_in);
+        viewflipper.setOutAnimation(this, android.R.anim.fade_out);
     }
 }
