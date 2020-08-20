@@ -84,7 +84,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/edi_text_border"
                     android:gravity="center"
-                    android:hint="রখির ওজন"
+                    android:hint="রথির ওজন"
                     android:inputType="number"
                     android:textStyle="bold" />
 
