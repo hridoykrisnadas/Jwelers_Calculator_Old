@@ -45,35 +45,55 @@ public class Sum_Acitivity extends AppCompatActivity {
                 int inputRothi2 = Integer.parseInt(rothi2.getText().toString());
                 int inputPoint2 = Integer.parseInt(point2.getText().toString());
 
-
-                if (inputAna1 < 16 && inputAna1 >= 0 && inputAna2 < 16 & inputAna2 >= 0 && inputRothi1 >= 0 && inputRothi1 < 6 && inputRothi1 >= 0 && inputRothi2 >= 0 && inputRothi2 < 6 && inputPoint1 >= 0 && inputPoint1 < 10 && inputPoint2 >= 0 && inputPoint2 < 10) {
-
-                    int p = inputPoint1 + inputPoint2;
-                    int r = inputRothi1 + inputRothi2;
-                    int a = inputAna1 + inputAna2;
-                    int v = inputVori1 + inputVori2;
-
-                    if (p >= 10) {
-                        r = r + 1;
-                        p = p - 10;
-                    }
-                    if (r >= 6) {
-                        a = a + 1;
-                        r = r - 6;
-                    }
-                    if (a >= 16) {
-                        v = v + 1;
-                        a = a - 16;
-                    }
-
-                    sumResult.setText("ভরি: " + v + "\nআনা: " + a + "\nরথি: " + r + "\nপয়েন্ট: " + p);
-                    sumResult.setVisibility(View.VISIBLE);
-
-
+                if (vori1.length() == 0) {
+                    vori1.setError("Enter value!");
+                } else if (ana1.length() == 0) {
+                    ana1.setError("Enter value!");
+                } else if (rothi1.length() == 0) {
+                    rothi1.setError("Enter value!");
+                } else if (point1.length() == 0) {
+                    point1.setError("Enter value!");
+                } else if (vori2.length() == 0) {
+                    vori2.setError("Enter value!");
+                } else if (ana2.length() == 0) {
+                    ana2.setError("Enter value!");
+                } else if (rothi2.length() == 0) {
+                    rothi2.setError("Enter value!");
+                } else if (point2.length() == 0) {
+                    point2.setError("Enter value!");
                 } else {
-                    sumResult.setText("Please Enter a valid value");
-                    sumResult.setVisibility(View.VISIBLE);
+
+                    if (inputAna1 < 16 && inputAna1 >= 0 && inputAna2 < 16 & inputAna2 >= 0 && inputRothi1 >= 0 && inputRothi1 < 6 && inputRothi1 >= 0 && inputRothi2 >= 0 && inputRothi2 < 6 && inputPoint1 >= 0 && inputPoint1 < 10 && inputPoint2 >= 0 && inputPoint2 < 10) {
+
+                        int p = inputPoint1 + inputPoint2;
+                        int r = inputRothi1 + inputRothi2;
+                        int a = inputAna1 + inputAna2;
+                        int v = inputVori1 + inputVori2;
+
+                        if (p >= 10) {
+                            r = r + 1;
+                            p = p - 10;
+                        }
+                        if (r >= 6) {
+                            a = a + 1;
+                            r = r - 6;
+                        }
+                        if (a >= 16) {
+                            v = v + 1;
+                            a = a - 16;
+                        }
+
+                        sumResult.setText("ভরি: " + v + "\nআনা: " + a + "\nরথি: " + r + "\nপয়েন্ট: " + p);
+                        sumResult.setVisibility(View.VISIBLE);
+
+
+                    } else {
+                        sumResult.setText("Please Enter a valid value");
+                        sumResult.setVisibility(View.VISIBLE);
+                    }
+
                 }
+
 
             }
         });
