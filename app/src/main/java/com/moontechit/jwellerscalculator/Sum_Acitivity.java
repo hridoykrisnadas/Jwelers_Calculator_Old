@@ -36,15 +36,6 @@ public class Sum_Acitivity extends AppCompatActivity {
             public void onClick(View view) {
 
 
-                int inputVori1 = Integer.parseInt(vori1.getText().toString());
-                int inputAna1 = Integer.parseInt(ana1.getText().toString());
-                int inputRothi1 = Integer.parseInt(rothi1.getText().toString());
-                int inputPoint1 = Integer.parseInt(point1.getText().toString());
-                int inputVori2 = Integer.parseInt(vori2.getText().toString());
-                int inputAna2 = Integer.parseInt(ana2.getText().toString());
-                int inputRothi2 = Integer.parseInt(rothi2.getText().toString());
-                int inputPoint2 = Integer.parseInt(point2.getText().toString());
-
                 if (vori1.length() == 0) {
                     vori1.setError("Enter value!");
                 } else if (ana1.length() == 0) {
@@ -62,6 +53,16 @@ public class Sum_Acitivity extends AppCompatActivity {
                 } else if (point2.length() == 0) {
                     point2.setError("Enter value!");
                 } else {
+
+
+                    int inputVori1 = Integer.parseInt(vori1.getText().toString());
+                    int inputAna1 = Integer.parseInt(ana1.getText().toString());
+                    int inputRothi1 = Integer.parseInt(rothi1.getText().toString());
+                    int inputPoint1 = Integer.parseInt(point1.getText().toString());
+                    int inputVori2 = Integer.parseInt(vori2.getText().toString());
+                    int inputAna2 = Integer.parseInt(ana2.getText().toString());
+                    int inputRothi2 = Integer.parseInt(rothi2.getText().toString());
+                    int inputPoint2 = Integer.parseInt(point2.getText().toString());
 
                     if (inputAna1 < 16 && inputAna1 >= 0 && inputAna2 < 16 & inputAna2 >= 0 && inputRothi1 >= 0 && inputRothi1 < 6 && inputRothi1 >= 0 && inputRothi2 >= 0 && inputRothi2 < 6 && inputPoint1 >= 0 && inputPoint1 < 10 && inputPoint2 >= 0 && inputPoint2 < 10) {
 

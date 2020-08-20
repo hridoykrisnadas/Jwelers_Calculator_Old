@@ -32,12 +32,6 @@ public class Tk_Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                int inputPrice = Integer.parseInt(price.getText().toString());
-                int inputVori = Integer.parseInt(vori.getText().toString());
-                int inputAna = Integer.parseInt(ana.getText().toString());
-                int inputRothi = Integer.parseInt(rothi.getText().toString());
-                int inputPoint = Integer.parseInt(point.getText().toString());
-
                 if (price.length() == 0) {
                     price.setError("Enter value!");
                 } else if (vori.length() == 0) {
@@ -49,6 +43,12 @@ public class Tk_Activity extends AppCompatActivity {
                 } else if (point.length() == 0) {
                     point.setError("Enter value!");
                 } else {
+
+                    int inputPrice = Integer.parseInt(price.getText().toString());
+                    int inputVori = Integer.parseInt(vori.getText().toString());
+                    int inputAna = Integer.parseInt(ana.getText().toString());
+                    int inputRothi = Integer.parseInt(rothi.getText().toString());
+                    int inputPoint = Integer.parseInt(point.getText().toString());
 
                     if (inputPrice >= 0 && inputVori >= 0 && inputAna >= 0 && inputAna < 16 && inputRothi >= 0 && inputRothi < 6 && inputPoint >= 0 && inputPoint < 10) {
 
