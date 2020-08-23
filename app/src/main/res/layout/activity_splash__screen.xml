@@ -4,17 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center_horizontal"
-    android:background="#F44E42"
+    android:background="#FA5A5A"
     android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context="com.moontechit.jwellerscalculator.Splash_Screen">
 
     <ImageView
-        android:id="@+id/splashID"
+        android:id="@+id/splashImageID"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:src="@drawable/logo" />
-
 
 </LinearLayout>

@@ -12,23 +12,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Splash">
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".Sponsored" />
+        <activity android:name=".Sum_Acitivity" />
+        <activity android:name=".Tk_Activity" />
+        <activity android:name=".Splash_Screen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Sponsored"
-            android:label="Sponsored By" />
-        <activity
-            android:name=".Sum_Acitivity"
-            android:label="গহনা যোগ করুন" />
-        <activity
-            android:name=".Tk_Activity"
-            android:label="টাকার হিসাব করুন" />
-        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>
