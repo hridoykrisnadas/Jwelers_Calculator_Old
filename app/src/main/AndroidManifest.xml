@@ -19,9 +19,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Sponsored" />
-        <activity android:name=".Sum_Acitivity" />
-        <activity android:name=".Tk_Activity" />
+        <activity
+            android:name=".Sponsored"
+            android:label="Sponsored By" />
+        <activity
+            android:name=".Sum_Acitivity"
+            android:label="গহনা যোগ করুন" />
+        <activity
+            android:name=".Tk_Activity"
+            android:label="টাকার হিসাব করুন" />
         <activity android:name=".MainActivity"></activity>
     </application>
 

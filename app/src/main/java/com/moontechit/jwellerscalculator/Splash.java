@@ -3,53 +3,33 @@ package com.moontechit.jwellerscalculator;
 import androidx.appcompat.app.AppCompatActivity;
 
 
-import android.app.Activity;
 import android.content.Intent;
+import android.os.Handler;
 import android.os.Bundle;
-import android.widget.ProgressBar;
-
+import android.view.WindowManager;
 
 public class Splash extends AppCompatActivity {
-    ProgressBar progressBar;
-    private int progress;
+    private static int SPLASH_TIME_OUT = 2000;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN
+        );
+        getSupportActionBar().hide();
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        progressBar = findViewById(R.id.progressBarID);
-
-        Thread thread = new Thread(new Runnable() {
+        new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                doWork();
-                stratApp();
-
+                Intent homeIntent = new Intent(Splash.this, MainActivity.class);
+                startActivity(homeIntent);
+                finish();
             }
-        });
-
-        thread.start();
-
-    }
-
-    public void doWork() {
-        for (progress = 10; progress >= 100; progress = progress + 10) {
-            try {
-                Thread.sleep(500);
-                progressBar.setProgress(progress);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-
-
-    }
-
-    public void stratApp() {
-        Intent intent = new Intent(Splash.this, MainActivity.class);
-        startActivity(intent);
-        finish();
+        }, SPLASH_TIME_OUT);
     }
 }

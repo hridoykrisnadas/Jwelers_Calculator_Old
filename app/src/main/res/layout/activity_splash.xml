@@ -5,21 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center_horizontal"
-    android:background="@drawable/splashs"
-    android:gravity="bottom|center"
-    android:orientation="vertical"
-    tools:context="com.moontechit.jwellerscalculator.Splash">
+    android:background="#F44E42"
+    android:gravity="center"
+    android:orientation="vertical">
 
-    <ProgressBar
-        android:id="@+id/progressBarID"
-        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-        android:layout_width="match_parent"
+    <ImageView
+        android:id="@+id/splashID"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="70dp"
-        android:layout_marginRight="70dp"
-        android:layout_marginBottom="200dp"
-        android:background="#f9f9f9"
-        android:backgroundTint="#f9f9f9"
-        android:progressTint="#2196F3" />
+        android:layout_gravity="center"
+        android:src="@drawable/logo" />
+
 
 </LinearLayout>
