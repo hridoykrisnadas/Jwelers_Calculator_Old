@@ -1,8 +1,6 @@
 package com.moontechit.jwellerscalculator;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-
 import android.content.Intent;
 import android.os.Handler;
 import android.os.Bundle;
