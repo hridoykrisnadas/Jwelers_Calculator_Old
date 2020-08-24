@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".Web_View"></activity>
+        <activity android:name=".MainActivity" />
         <activity
             android:name=".Sponsored"
             android:label="Sponsored By" />

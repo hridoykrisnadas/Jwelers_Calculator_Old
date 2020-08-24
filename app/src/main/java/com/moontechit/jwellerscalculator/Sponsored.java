@@ -74,13 +74,10 @@ public class Sponsored extends AppCompatActivity {
         webHridoy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Uri uri = Uri.parse("https://hridoykrisna.xyz/");
-
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                Intent intent = new Intent(Sponsored.this, Web_View.class);
                 startActivity(intent);
             }
         });
-
 
     }
 }
