@@ -29,7 +29,7 @@ public class Sponsored extends AppCompatActivity {
         fbBijoy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Uri uri = Uri.parse("http://www.faacebook.com/bijoykrishna.das.581/");
+                Uri uri = Uri.parse("http://www.facebook.com/bijoykrishna.das.581/");
 
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
@@ -53,7 +53,7 @@ public class Sponsored extends AppCompatActivity {
         fbHridoy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Uri uri = Uri.parse("http://www.faacebook.com/hridoykrisnadas/");
+                Uri uri = Uri.parse("http://www.facebook.com/hridoykrisnadas/");
 
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
