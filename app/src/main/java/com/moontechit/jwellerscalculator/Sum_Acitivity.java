@@ -1,13 +1,12 @@
 package com.moontechit.jwellerscalculator;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Sum_Acitivity extends AppCompatActivity {
     EditText vori1, vori2, ana1, ana2, rothi1, rothi2, point1, point2;
