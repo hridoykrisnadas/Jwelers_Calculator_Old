@@ -13,9 +13,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity"></activity>
-        <activity android:name=".Sponsored" />
-        <activity android:name=".Sum_Acitivity" />
-        <activity android:name=".Tk_Activity" />
+        <activity
+            android:name=".Sponsored"
+            android:label="Sponsored By" />
+        <activity
+            android:name=".Sum_Acitivity"
+            android:label="গহনার যোগ" />
+        <activity
+            android:name=".Tk_Activity"
+            android:label="টাকার হিসাব" />
         <activity android:name=".Splash_Screen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
