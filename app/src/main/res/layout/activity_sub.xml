@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFEB3B"
+    tools:context=".Sub_Activity"
     android:orientation="vertical"
     android:padding="10dp"
-    tools:context="com.moontechit.jwellerscalculator.Sum_Acitivity">
+    android:background="@color/colorPrimary">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -22,7 +23,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="গহনার ওজন করুন"
+                android:text="গহনার বিয়োগ করুন"
                 android:background="@drawable/edi_text_border"
                 android:textColor="#3F51B5"
                 android:textSize="25sp"
@@ -177,7 +178,7 @@
 
             <Button
                 android:layout_margin="5dp"
-                android:id="@+id/SummationBtn"
+                android:id="@+id/subButtonId"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginTop="5dp"
@@ -189,7 +190,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/SubstractionResult"
+                android:id="@+id/SummationResult"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/SummationBtn"
@@ -206,4 +207,5 @@
 
         </LinearLayout>
     </ScrollView>
+
 </LinearLayout>

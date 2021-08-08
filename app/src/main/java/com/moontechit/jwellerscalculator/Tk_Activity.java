@@ -54,20 +54,23 @@ public class Tk_Activity extends AppCompatActivity {
                 int inputRothi = Integer.parseInt(rothi.getText().toString());
                 int inputPoint = Integer.parseInt(point.getText().toString());
 
-                if (inputPrice >= 0 && inputVori >= 0 && inputAna >= 0 && inputAna < 16 && inputRothi >= 0 && inputRothi < 6 && inputPoint >= 0 && inputPoint < 10) {
 
-                    float v = inputPrice;
-                    float a = v / 16;
-                    float r = a / 6;
-                    float p = r / 10;
+                float v = inputPrice;
+                float a = v / 16;
+                float r = a / 6;
+                float p = r / 10;
+
+                definate.setText("১ ভরি: " + v + " টাকা \n" + "১ আনা: " + a + " টাকা \n" + "১ রথি: " + r + " টাকা \n" + "১ পয়েন্ট: " + p + " টাকা \n");
+                definate.setVisibility(View.VISIBLE);
+
+                if (inputPrice >= 0 && inputVori >= 0 && inputAna >= 0 && inputAna < 16 && inputRothi >= 0 && inputRothi < 6 && inputPoint >= 0 && inputPoint < 10) {
 
                     float RESULT = (inputVori * v) + (inputAna * a) + (inputRothi * r) + (inputPoint * p);
                     result.setText("মোট টাকা: " + RESULT);
                     result.animate();
                     result.setVisibility(View.VISIBLE);
 
-                    definate.setText("১ ভরি: " + v + " টাকা \n" + "১ আনা: " + a + " টাকা \n" + "১ রথি: " + r + " টাকা \n" + "১ পয়েন্ট: " + p + " টাকা \n");
-                    definate.setVisibility(View.VISIBLE);
+
 
                 } else {
                     result.setText(" Please Enter a valid value");

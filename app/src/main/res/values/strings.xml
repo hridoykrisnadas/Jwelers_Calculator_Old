@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Jwellers Calculator</string>
+    <string name="tk">টাকার হিসাব করুন</string>
+    <string name="sum">গহনার ওজন যোগ করুন</string>
+    <string name="sub">গহনার ওজন বিয়োগ করুন</string>
+    <string name="sponsored_by">Sponsored By</string>
 </resources>

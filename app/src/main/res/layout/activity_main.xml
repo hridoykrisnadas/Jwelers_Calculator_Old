@@ -3,38 +3,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#FFFFFF"
     android:orientation="vertical"
     android:padding="0dp"
     tools:context=".MainActivity">
 
+
+<!--    <com.google.android.material.tabs.TabLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:tabIndicatorHeight="4dp"-->
+<!--        app:tabIndicatorColor="#fff"-->
+<!--        app:tabTextColor="#e7e757"-->
+<!--        app:tabSelectedTextColor="#fff"-->
+<!--        android:background="#FFC107"/>-->
+
+<!--    <androidx.viewpager.widget.ViewPager-->
+<!--        xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        android:id="@+id/viewpagerID"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent" />-->
+
     <ViewFlipper
         android:id="@+id/viewFlipper"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="150dp"
         android:layout_centerHorizontal="true"
         android:background="#DABC5B">
 
     </ViewFlipper>
-
     <LinearLayout
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:weightSum="3"
+        android:weightSum="10"
         android:layout_below="@id/viewFlipper"
         android:layout_centerHorizontal="true"
-        android:layout_margin="5dp"
-        android:background="#f000">
+        android:layout_margin="5dp">
 
         <Button
-            android:layout_weight="1"
+            android:layout_weight="3"
             android:id="@+id/TkButtonId"
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:background="#00B0FF"
+            android:background="#FF6230"
             android:foregroundGravity="center"
-            android:text="টাকার হিসাব করুন"
+            android:text="@string/tk"
+            android:textColor="#000000"
             android:drawableTint="#3D5AFE"
             android:textSize="15pt"
             android:textStyle="bold" />
@@ -43,10 +59,24 @@
             android:id="@+id/SumButtonId"
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:layout_weight="1"
-            android:background="#F44336"
+            android:layout_weight="3"
+            android:background="#FFEB3B"
             android:foregroundGravity="center"
-            android:text="গহনার ওজন যোগ করুন"
+            android:text="@string/sum"
+            android:textColor="#000000"
+            android:textColorHint="#3D5AFE"
+            android:textSize="15pt"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/subButtonId"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_weight="3"
+            android:background="#FF5722"
+            android:foregroundGravity="center"
+            android:text="@string/sub"
+            android:textColor="#000000"
             android:textColorHint="#3D5AFE"
             android:textSize="15pt"
             android:textStyle="bold" />
@@ -58,7 +88,7 @@
             android:layout_weight="1"
             android:background="#FFEB3B"
             android:foregroundGravity="center"
-            android:text="Sponsored By"
+            android:text="@string/sponsored_by"
             android:textAllCaps="false"
             android:textColorHint="#3D5AFE"
             android:textSize="15pt"

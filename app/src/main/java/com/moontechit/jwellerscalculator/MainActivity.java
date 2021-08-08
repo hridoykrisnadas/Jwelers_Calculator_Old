@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     ViewFlipper viewflipper;
-    Button tkButton, sumButton, sponsored;
+    Button tkButton, sumButton, subButton, sponsored;
 
 
     @Override
@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
         tkButton = findViewById(R.id.TkButtonId);
         sumButton = findViewById(R.id.SumButtonId);
+        subButton = findViewById(R.id.subButtonId);
         sponsored = findViewById(R.id.SponsoredButtonID);
 
         tkButton.setOnClickListener(new View.OnClickListener() {
@@ -42,6 +43,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, Sum_Acitivity.class);
+                startActivity(intent);
+            }
+        });
+        subButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,Sub_Activity.class);
                 startActivity(intent);
             }
         });
