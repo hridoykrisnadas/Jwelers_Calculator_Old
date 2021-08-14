@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 public class Sub_Activity extends AppCompatActivity {
     EditText vori1, vori2, ana1, ana2, rothi1, rothi2, point1, point2;
-    Button sumButton;
+    Button subButton;
     TextView subResult;
     int pr, rr, ar, vr;
     AlertDialog.Builder alertDialog;
@@ -32,10 +32,10 @@ public class Sub_Activity extends AppCompatActivity {
         rothi2 = findViewById(R.id.Rothi2);
         point1 = findViewById(R.id.Point1);
         point2 = findViewById(R.id.Point2);
-        sumButton = findViewById(R.id.subButtonId);
-        subResult = findViewById(R.id.SubstractionResult);
+        subButton = findViewById(R.id.subButtonId);
+        subResult = findViewById(R.id.subResult);
 
-        sumButton.setOnClickListener(new View.OnClickListener() {
+        subButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -127,8 +127,8 @@ public class Sub_Activity extends AppCompatActivity {
                         vr =    v1-v2;
                     }
 
-
-                    subResult.setText(vr + " ভরি\n" + ar + " আনা\n" + rr + " রথি\n" + pr + " পয়েন্ট");
+                String result = vr + " ভরি\n" + ar + " আনা\n" + rr + " রথি\n" + pr + " পয়েন্ট";
+                    subResult.setText(result);
                     subResult.setVisibility(View.VISIBLE);
 
 

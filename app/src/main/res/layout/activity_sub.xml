@@ -190,7 +190,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/SummationResult"
+                android:id="@+id/subResult"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/SummationBtn"

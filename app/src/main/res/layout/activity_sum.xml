@@ -189,7 +189,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/SubstractionResult"
+                android:id="@+id/SummationResult"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/SummationBtn"
