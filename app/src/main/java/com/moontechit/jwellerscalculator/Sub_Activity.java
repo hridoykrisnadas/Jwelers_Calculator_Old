@@ -77,7 +77,7 @@ public class Sub_Activity extends AppCompatActivity {
 
                 if (a1 < 16 && a1 >= 0 && a2 < 16 & a2 >= 0 && r1 >= 0 && r1 < 6 && r2 >= 0 && r2 < 6 && p1 >= 0 && p1 < 10 && p2 >= 0 && p2 < 10) {
 
-                    if (p1 > p2) {
+                    if (p1 < p2) {
                         r2 = r2 + 1;
                         pr = (p1 + 10) - p2;
                     } else {
@@ -93,8 +93,8 @@ public class Sub_Activity extends AppCompatActivity {
                         rr = r1 - r2;
                     }
                     if (a2 == 16) {
+                        v2 = v2 + 1;
                         ar = a1;
-                        vr = vr + 1;
                     } else if (a1 < a2) {
                         v2 = v2 + 1;
                         ar = (a1 + 16) - a2;
@@ -119,6 +119,15 @@ public class Sub_Activity extends AppCompatActivity {
 
 
                             alert.show();
+                            vori1.setText("");
+                            vori2.setText("");
+
+                            /*ana1.setText("");
+                            ana2.setText("");
+                            rothi1.setText("");
+                            rothi2.setText("");
+                            point1.setText("");
+                            point2.setText("");*/
 
                         } catch (Exception e) {
                             Log.d(Sub_Activity.TAG, "Show Dialog: " + e.getMessage());
@@ -137,8 +146,8 @@ public class Sub_Activity extends AppCompatActivity {
                     subResult.setVisibility(View.VISIBLE);
                 }
 
-
             }
+
         });
 
     }

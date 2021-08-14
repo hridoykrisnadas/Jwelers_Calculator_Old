@@ -27,7 +27,7 @@ public class Web_View extends AppCompatActivity {
         webSettings.setJavaScriptEnabled(true);
 
         webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("https://hridoykrisna.xyz/");
+        webView.loadUrl("https://bd.linkedin.com/in/hridoykrisnadas");
 
 
     }
