@@ -51,7 +51,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/edi_text_border"
                     android:gravity="center"
-                    android:hint="ভরির ওজন"
+                    android:hint="ভরি"
                     android:inputType="number"
                     android:textStyle="bold" />
 
@@ -63,7 +63,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/edi_text_border"
                     android:gravity="center"
-                    android:hint="আনার ওজন"
+                    android:hint="আনা"
                     android:inputType="number"
                     android:textStyle="bold" />
 
@@ -83,7 +83,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/edi_text_border"
                     android:gravity="center"
-                    android:hint="রথির ওজন"
+                    android:hint="রথি"
                     android:inputType="number"
                     android:textStyle="bold" />
 
@@ -95,7 +95,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/edi_text_border"
                     android:gravity="center"
-                    android:hint="পয়েন্টের ওজন"
+                    android:hint="পয়েন্ট"
                     android:inputType="number"
                     android:textStyle="bold" />
 
@@ -124,7 +124,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/edi_text_border"
                     android:gravity="center"
-                    android:hint="ভরির ওজন"
+                    android:hint="ভরি"
                     android:inputType="number"
                     android:textStyle="bold" />
 
@@ -136,7 +136,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/edi_text_border"
                     android:gravity="center"
-                    android:hint="আনার ওজন"
+                    android:hint="আনা"
                     android:inputType="number"
                     android:textStyle="bold" />
 
@@ -156,7 +156,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/edi_text_border"
                     android:gravity="center"
-                    android:hint="রথির ওজন"
+                    android:hint="রথি"
                     android:inputType="number"
                     android:textStyle="bold" />
 
@@ -168,7 +168,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/edi_text_border"
                     android:gravity="center"
-                    android:hint="পয়েন্টের ওজন"
+                    android:hint="পয়েন্ট"
                     android:inputType="number"
                     android:textStyle="bold" />
 
