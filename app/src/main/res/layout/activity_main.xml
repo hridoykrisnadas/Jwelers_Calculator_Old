@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#FFFFFF"
     android:orientation="vertical"
     android:padding="0dp"
@@ -18,27 +17,28 @@
         android:background="#DABC5B">
 
     </ViewFlipper>
+
     <LinearLayout
-        android:layout_height="match_parent"
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:weightSum="10"
+        android:layout_height="match_parent"
         android:layout_below="@id/viewFlipper"
         android:layout_centerHorizontal="true"
-        android:layout_margin="5dp">
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:weightSum="10">
 
         <Button
-            android:layout_weight="3"
             android:id="@+id/TkButtonId"
             android:layout_width="match_parent"
             android:layout_height="150dp"
+            android:layout_weight="3"
             android:background="#FF6230"
+            android:drawableTint="#3D5AFE"
             android:foregroundGravity="center"
             android:text="@string/tk"
             android:textColor="#000000"
-            android:drawableTint="#3D5AFE"
             android:textSize="15pt"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/SumButtonId"

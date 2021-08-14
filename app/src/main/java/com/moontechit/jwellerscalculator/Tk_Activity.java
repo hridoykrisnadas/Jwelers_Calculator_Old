@@ -71,7 +71,6 @@ public class Tk_Activity extends AppCompatActivity {
                     result.setVisibility(View.VISIBLE);
 
 
-
                 } else {
                     result.setText(" Please Enter a valid value");
                     result.animate();

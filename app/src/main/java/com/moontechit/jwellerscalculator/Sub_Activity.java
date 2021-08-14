@@ -1,8 +1,5 @@
 package com.moontechit.jwellerscalculator;
 
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.util.Log;
@@ -11,13 +8,16 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+
 public class Sub_Activity extends AppCompatActivity {
+    private static final String TAG = "tag";
     EditText vori1, vori2, ana1, ana2, rothi1, rothi2, point1, point2;
     Button subButton;
     TextView subResult;
     int pr, rr, ar, vr;
     AlertDialog.Builder alertDialog;
-    private static final String TAG = "tag";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,33 +75,33 @@ public class Sub_Activity extends AppCompatActivity {
                 int r2 = Integer.parseInt(rothi2.getText().toString());
                 int p2 = Integer.parseInt(point2.getText().toString());
 
-                if (a1 < 16 && a1 >= 0 && a2 < 16 & a2 >= 0 && r1 >= 0 && r1 < 6  && r2 >= 0 && r2 < 6 && p1 >= 0 && p1 < 10 && p2 >= 0 && p2 < 10) {
+                if (a1 < 16 && a1 >= 0 && a2 < 16 & a2 >= 0 && r1 >= 0 && r1 < 6 && r2 >= 0 && r2 < 6 && p1 >= 0 && p1 < 10 && p2 >= 0 && p2 < 10) {
 
-                    if (p1>p2){
-                        r2 = r2+1;
-                        pr = (p1+10)-p2;
-                    } else{
-                        pr = p1-p2;
+                    if (p1 > p2) {
+                        r2 = r2 + 1;
+                        pr = (p1 + 10) - p2;
+                    } else {
+                        pr = p1 - p2;
                     }
-                    if (r2==6){
-                        a2 = a2+1;
+                    if (r2 == 6) {
+                        a2 = a2 + 1;
                         rr = r1;
-                    } else if (r1<r2){
-                        a2 = a2+1;
-                        rr = (r1+6)-r2;
+                    } else if (r1 < r2) {
+                        a2 = a2 + 1;
+                        rr = (r1 + 6) - r2;
                     } else {
-                        rr = r1-r2;
+                        rr = r1 - r2;
                     }
-                    if (a2==16){
+                    if (a2 == 16) {
                         ar = a1;
-                        vr = vr+1;
-                    } else if (a1<a2){
-                        v2 = v2+1;
-                        ar = (a1+16)-a2;
+                        vr = vr + 1;
+                    } else if (a1 < a2) {
+                        v2 = v2 + 1;
+                        ar = (a1 + 16) - a2;
                     } else {
-                        ar = a1-a2;
+                        ar = a1 - a2;
                     }
-                    if (v1<v2){
+                    if (v1 < v2) {
                         try {
 
                             alertDialog = new AlertDialog.Builder(Sub_Activity.this);
@@ -123,11 +123,11 @@ public class Sub_Activity extends AppCompatActivity {
                         } catch (Exception e) {
                             Log.d(Sub_Activity.TAG, "Show Dialog: " + e.getMessage());
                         }
-                    } else{
-                        vr =    v1-v2;
+                    } else {
+                        vr = v1 - v2;
                     }
 
-                String result = vr + " ভরি\n" + ar + " আনা\n" + rr + " রথি\n" + pr + " পয়েন্ট";
+                    String result = vr + " ভরি\n" + ar + " আনা\n" + rr + " রথি\n" + pr + " পয়েন্ট";
                     subResult.setText(result);
                     subResult.setVisibility(View.VISIBLE);
 
