@@ -40,7 +40,7 @@
                 android:layout_margin="5dp"
                 android:background="@drawable/edi_text_border"
                 android:gravity="center"
-                android:hint="বর্তমান সোনার দাম ‍লিখুন এখানে (১ ভরি)"
+                android:hint="বর্তমান সোনার দাম"
                 android:inputType="number"
                 android:textStyle="bold" />
 
@@ -59,7 +59,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/edi_text_border"
                     android:gravity="center"
-                    android:hint="কতো ভরি তা লিখুন"
+                    android:hint="ভরি"
                     android:inputType="number"
                     android:textStyle="bold" />
 
@@ -71,7 +71,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/edi_text_border"
                     android:gravity="center"
-                    android:hint="কতো আনা তা লিখুন"
+                    android:hint="আনা"
                     android:inputType="number"
                     android:textStyle="bold" />
 
@@ -92,7 +92,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/edi_text_border"
                     android:gravity="center"
-                    android:hint="কতো রথি তা লিখুন"
+                    android:hint="রথি"
                     android:inputType="number"
                     android:textStyle="bold" />
 
@@ -104,7 +104,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/edi_text_border"
                     android:gravity="center"
-                    android:hint="কতো পয়েন্ট তা লিখুন"
+                    android:hint="পয়েন্ট"
                     android:inputType="number"
                     android:textStyle="bold" />
 
